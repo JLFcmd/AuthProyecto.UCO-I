@@ -1,0 +1,24 @@
+{
+  "name": "jami/authprojecto",
+  "description": "LOGIN page by JAMI",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "responsive",
+    "back-end",
+    "template",
+    "theme",
+    "web",
+    "admin"
+  ],
+  "authors": [
+    {
+      "name": "JAMI"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://www.uco.es/idiomas/"
+  }
+}
