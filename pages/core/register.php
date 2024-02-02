@@ -22,9 +22,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuarios (username, password) VALUES ('$username', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Usuario registrado con éxito.";
+        // Inicia el contador en 2 segundos
+        $tiempo_espera = 2;
+        // Redirige a otra página después de 2 segundos 
+        header("refresh:$tiempo_espera;url=../index2.php");
+        ?>
+        <!DOCTYPE html>
+        <html lang="es">
+            <head>
+                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Registro Usuario</title>
+            </head>
+            <body>
+                <div>
+                    <p>Usuario registrado correctamente.</p>
+                </div>
+            </body>
+        </html>
+        <?php
     } else {
-        echo "Error al registrar el usuario: " . $conn->error;
+        // Inicia el contador en 2 segundos
+        $tiempo_espera = 2;
+        // Redirige a otra página después de 2 segundos 
+        header("refresh:$tiempo_espera;url=../index2.php");
+        ?>
+        <!DOCTYPE html>
+        <html lang="es">
+            <head>
+                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Registro Usuario</title>
+            </head>
+            <body>
+                <div>
+                    <p>Usuario no registrado.</p>
+                </div>
+            </body>
+        </html>
+        <?php
     }
 
     // Cerrar la conexión
