@@ -2,7 +2,7 @@
     // Inicia el contador en 2 segundos
     $tiempo_espera = 2;
     // Redirige a otra página después de 2 segundos 
-    header("refresh:$tiempo_espera;url=../index.php");
+    header("refresh:$tiempo_espera;url=../login-v2.html");
 ?>
 <!DOCTYPE html>
 <html lang="es">

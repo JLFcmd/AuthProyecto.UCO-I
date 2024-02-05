@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
     $password = htmlspecialchars($_POST["password"]);
 
     // Consulta preparada para evitar inyección de SQL
-    $consulta = $conexion->prepare("SELECT password FROM usuarios WHERE username = ?");
+    $consulta = $conexion->prepare("SELECT password, admin FROM usuarios WHERE username = ?");
     $consulta->bind_param("s", $username);
 
     // Ejecutar la consulta
@@ -22,14 +22,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
 
     // Verificar si hay filas coincidentes (usuario encontrado)
     if ($resultado->num_rows > 0) {
-        // Obtener la contraseña almacenada en la base de datos
+        // Obtener la contraseña y el campo admin almacenados en la base de datos
         $fila = $resultado->fetch_assoc();
         $hashedPasswordDB = $fila["password"];
+        $isAdmin = $fila["admin"];
 
         // Verificar si la contraseña proporcionada coincide con la almacenada
         if (hash('sha256', $password) == $hashedPasswordDB) {
-            // Credenciales válidas, iniciar sesión y redirigir
+            // Credenciales válidas, iniciar sesión
             $_SESSION["username"] = $username;
+
+            // Verificar si el usuario es administrador
+            if ($isAdmin == 1) {
+                $_SESSION["admin"] = true;
+            }
+
+            // Redirigir a la página principal
             header("Location: ../principal.php");
             exit();
         }

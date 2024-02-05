@@ -37,6 +37,12 @@
       <div class="dropdown-content">
         <a href="#">Cuenta</a>
         <a href="#">Ajustes</a>
+        <?php
+  // Verificar si el usuario actual es "admin" y el correo es "admin@admin.admin"
+  if (isset($_SESSION["username"]) && $_SESSION["username"] == "admin") {
+    echo '<a href="register-v2.php">Registrar</a>';
+  }
+  ?>
         <a href="./core/logout.php">Cerrar Sesión</a>
       </div>
     </div>
@@ -45,8 +51,8 @@
   <aside class="main-sidebar sidebar-dark-info elevation-4" style="background-color:#092d50">
     <!-- Brand Logo -->
     <a style="text-decoration: none; color: white" href="#" class="brand-link">
-      <img src="../img/logo.png" alt="logoUCO" style="width: 50px; margin-left: 4px">
-      <span class="brand-text font-weight-light" style="margin: -7px; font-size: 16px"><b>IDIOMAS</b></span>
+      <!-- Nombre de ejemplo -->
+      <span class="brand-text font-weight-light" style="margin: -7px; font-size: 16px"><b>AdminLTE</b></span>
     </a>
 
     <!-- Sidebar -->

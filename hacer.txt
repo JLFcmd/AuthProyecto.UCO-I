@@ -1,0 +1,29 @@
+* quitar logos
+
+dejar css originales
+
+rehacer rutas en una sola todos los css
+
+rehacer rutas en una sola todos los js
+
+hacer pagina de login buscar mediante de la de admin lte buscando login en l,a pagiande  busqeuda
+
+
+
+
+
+
+COSAS QUE HEMOS CAMBIADO:
+
+paginas de login y register por las de adminlte
+
+se ha creado js para verirficar que las contraseñas coinciden en register.php
+
+se ha creado adminphp para verificar que el usuario que quiere crear usuarios sea admin con variables booleanas tinyint
+
+en la pagina de sidebar.php se ha verificado tambien para mostrar el boton de regiustrar a quien tenga una sesion de admin iniciada
+
+en la base de datos hemos añadido dos campos, email, y admin (tinyint) que es para verificar por booleano  si el usuario tiene o no permisos de administrador.
+
+
+

@@ -11,7 +11,7 @@
   <div class="container">
     <div class="login-container">
       <div class="text-center">
-        <img src="../img/logogrande.png" alt="logograndeUCOIDIOMAS" class="logo">
+       
       </div>
       <form action="./core/register.php" method="post">
         <div class="form-group">

@@ -16,16 +16,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Obtener datos del formulario
     $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = hash('sha256', $_POST['password']); // Encriptar la contraseña con SHA-256
 
     // Insertar datos en la base de datos
-    $sql = "INSERT INTO usuarios (username, password) VALUES ('$username', '$password')";
+    $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         // Inicia el contador en 2 segundos
         $tiempo_espera = 2;
         // Redirige a otra página después de 2 segundos 
-        header("refresh:$tiempo_espera;url=../index2.php");
+        header("refresh:$tiempo_espera;url=../login-v2.html");
         ?>
         <!DOCTYPE html>
         <html lang="es">
@@ -46,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Inicia el contador en 2 segundos
         $tiempo_espera = 2;
         // Redirige a otra página después de 2 segundos 
-        header("refresh:$tiempo_espera;url=../index2.php");
+        header("refresh:$tiempo_espera;url=../login-v2.html");
         ?>
         <!DOCTYPE html>
         <html lang="es">

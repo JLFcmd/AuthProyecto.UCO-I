@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Inicio de Sesión</title>
   <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="css/login-register.css">
+  <!--<link rel="stylesheet" href="css/login-register.css"> -->
+
+  <link rel="stylesheet" href="../dist/css/adminlte.css">
+
+
 
 
 </head>
@@ -15,7 +19,7 @@
   <div class="container">
     <div class="login-container">
       <div class="text-center">
-        <img src="../img/logogrande.png" alt="logograndeUCOIDIOMAS" class="logo">
+       
       </div>
       <form action="./core/login.php" method="post">
         <div class="form-group">
