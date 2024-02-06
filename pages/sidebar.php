@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <?php
   include 'header.php';
   ?>
 
-  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="../core/css/sidebar.css">
 
 </head>
 
@@ -20,7 +21,7 @@
       </li>
     </ul>
 
-    <img class="imguser" src="../img/usericon.png" alt="" style="width: 25px; margin-left: auto;">
+    <img class="imguser" src="../core/img/usericon.png" alt="" style="width: 25px; margin-left: auto;">
     <div class="dropdown">
       <button class="dropbtn">
         <?php
@@ -38,12 +39,12 @@
         <a href="#">Cuenta</a>
         <a href="#">Ajustes</a>
         <?php
-  // Verificar si el usuario actual es "admin" y el correo es "admin@admin.admin"
-  if (isset($_SESSION["username"]) && $_SESSION["username"] == "admin") {
-    echo '<a href="register-v2.php">Registrar</a>';
-  }
-  ?>
-        <a href="./core/logout.php">Cerrar Sesión</a>
+        // Verificar si el usuario actual es "admin" y el correo es "admin@admin.admin"
+        if (isset($_SESSION["username"]) && $_SESSION["admin"] && $_SESSION["admin"] == 1) {
+          echo '<a href="index2.php">Registrar</a>';
+        }
+        ?>
+        <a href="../core/php/logout.php">Cerrar Sesión</a>
       </div>
     </div>
   </nav>
@@ -52,7 +53,7 @@
     <!-- Brand Logo -->
     <a style="text-decoration: none; color: white" href="#" class="brand-link">
       <!-- Nombre de ejemplo -->
-      <span class="brand-text font-weight-light" style="margin: -7px; font-size: 16px"><b>AdminLTE</b></span>
+      <span class="brand-text font-weight-light" style="margin: -7px; font-size: 20px"><b>AdminLTE</b></span>
     </a>
 
     <!-- Sidebar -->
@@ -93,9 +94,10 @@
   <!-- Bootstrap 4 -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="../dist/js/adminlte.min.js"></script>
+  <script src="../core/js/adminlte.min.js"></script>
   <!-- Script de los actives (Botones sidebar) -->
-  <script src="./core/active.js"></script>
+  <script src="../core/js/active.js"></script>
 
 </body>
+
 </html>

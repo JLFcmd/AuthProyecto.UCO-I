@@ -22,6 +22,6 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 // Redirigir a la página de inicio
-header("Location: ../login-v2.html");
+header("Location: ../pages/index.php");
 exit();
 ?>

@@ -38,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
             }
 
             // Redirigir a la página principal
-            header("Location: ../principal.php");
+            header("Location: ../pages/principal.php");
             exit();
         }
     }
 
     // Credenciales inválidas, mostrar mensaje de error
-    header("Location: ../core/uci.php");
+    header("Location: ../core/php/uci.php");
 }
 
 // Cerrar la consulta

@@ -6,7 +6,7 @@ rehacer rutas en una sola todos los css
 
 rehacer rutas en una sola todos los js
 
-hacer pagina de login buscar mediante de la de admin lte buscando login en l,a pagiande  busqeuda
+* hacer pagina de login buscar mediante de la de admin lte buscando login en l,a pagiande  busqeuda
 
 modificar readme.md para meter todo lo que hemos apuntado aqui abajo: -> -> ->
 

@@ -6,7 +6,7 @@ function reiniciarTemporizador() {
     clearTimeout(temporizadorInactividad);
     temporizadorInactividad = setTimeout(function() {
         // Redirigir a la página PHP cuando el usuario está inactivo
-        window.location.href = './core/logout.php';
+        window.location.href = '../core/php/logout.php';
     }, tiempoInactividad * 1000); // Convertir segundos a milisegundos
 }
 

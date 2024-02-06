@@ -18,20 +18,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = hash('sha256', $_POST['password']); // Encriptar la contraseña con SHA-256
+    $admin = isset($_POST['admin']) ? 1 : 0; // Verifica si la casilla de selección está marcada
 
     // Insertar datos en la base de datos
-    $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$password')";
+    $sql = "INSERT INTO usuarios (username, email, password, admin) VALUES ('$username', '$email', '$password', '$admin')";
 
     if ($conn->query($sql) === TRUE) {
         // Inicia el contador en 2 segundos
         $tiempo_espera = 2;
         // Redirige a otra página después de 2 segundos 
-        header("refresh:$tiempo_espera;url=../login-v2.html");
+        header("refresh:$tiempo_espera;url=../pages/index.php");
         ?>
         <!DOCTYPE html>
         <html lang="es">
             <head>
-                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <link rel="stylesheet" href="../core/css/jsna-uci.css">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Registro Usuario</title>
@@ -47,12 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Inicia el contador en 2 segundos
         $tiempo_espera = 2;
         // Redirige a otra página después de 2 segundos 
-        header("refresh:$tiempo_espera;url=../login-v2.html");
+        header("refresh:$tiempo_espera;url=../pages/index.php");
         ?>
         <!DOCTYPE html>
         <html lang="es">
             <head>
-                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <link rel="stylesheet" href="../core/css/jsna-uci.css">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Registro Usuario</title>

@@ -7,6 +7,6 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.css">
+  <link rel="stylesheet" href="../core/css/adminlte.css">
   <!-- Tema Personalizado -->
-  <link rel="stylesheet" href="../pages/css/style.css">
+  <link rel="stylesheet" href="../core/css/style.css">

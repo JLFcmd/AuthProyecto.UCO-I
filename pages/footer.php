@@ -24,9 +24,9 @@
   <!-- Bootstrap 4 -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="../dist/js/adminlte.min.js"></script>
+  <script src="../core/js/adminlte.min.js"></script>
   <!-- Script de los actives -->
-  <script src="./core/active.js"></script>
+  <script src="../core/js/active.js"></script>
 
 </body>
 </html>
