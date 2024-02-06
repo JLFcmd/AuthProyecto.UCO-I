@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
             }
 
             // Redirigir a la página principal
-            header("Location: ../pages/principal.php");
+            header("Location: ../../pages/principal.php");
             exit();
         }
     }
