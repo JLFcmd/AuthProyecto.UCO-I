@@ -203,3 +203,8 @@ Estos son los scripts importados en el proyecto para que sea correcta su funcion
 - **password:** Almacena la contraseña cifrada utilizando el algoritmo SHA-256.
 
 - **admin:** Es un campo de tipo TINYINT en MySQL que funciona como una variable booleana. Se utiliza para definir si un usuario es administrador (1) o no (0). Además, en la página de registro, se utiliza para permitir que un usuario administrador pueda crear otros usuarios administradores mediante una casilla de verificación.
+
+
+# 💠 La base de datos que se utilizará estara en formato SQL en la carpeta de proyecto.
+
+- **Nombre:** usuariosucoi.sql

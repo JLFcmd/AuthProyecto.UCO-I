@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
     }
 
     // Credenciales inválidas, mostrar mensaje de error
-    header("Location: ../core/php/uci.php");
+    header("Location: ../php/uci.php");
 }
 
 // Cerrar la consulta
