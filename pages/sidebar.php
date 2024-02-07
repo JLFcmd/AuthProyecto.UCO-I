@@ -7,7 +7,7 @@
   include 'header.php';
   ?>
 
-  <link rel="stylesheet" href="../core/css/sidebar.css">
+  <link rel="stylesheet" href="../core/css/adminlte.min.css">
 
 </head>
 
@@ -38,11 +38,13 @@
       <div class="dropdown-content">
         <a href="#">Cuenta</a>
         <a href="#">Ajustes</a>
+        <!-- Verificar si hay una conexion de usuario y un sesion de admin en la que el usuario actual es "admin" mediante booleanos de 0 y 1 (tinyINT) -->
         <?php
-        // Verificar si el usuario actual es "admin" y el correo es "admin@admin.admin"
-        if (isset($_SESSION["username"]) && $_SESSION["admin"] && $_SESSION["admin"] == 1) {
-          echo '<a href="index2.php">Registrar</a>';
-        }
+          if (isset($_SESSION["username"]) && isset($_SESSION["admin"]) && $_SESSION["admin"] == 1) {
+        ?>
+            <a href="index2.php">Registrar</a>
+        <?php
+          }
         ?>
         <a href="../core/php/logout.php">Cerrar Sesión</a>
       </div>

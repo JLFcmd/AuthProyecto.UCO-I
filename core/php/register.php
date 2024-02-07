@@ -32,14 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!DOCTYPE html>
         <html lang="es">
             <head>
-                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <link rel="stylesheet" href="../css/adminlte.min.css">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Registro Usuario</title>
             </head>
-            <body>
-                <div>
-                    <p>Usuario registrado correctamente</p>
+            <body class="bodyJSNA-UCI">
+                <div class="divMESSAGE">
+                    <p class="message">Usuario registrado correctamente</p>
                 </div>
             </body>
         </html>
@@ -53,14 +53,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!DOCTYPE html>
         <html lang="es">
             <head>
-                <link rel="stylesheet" href="../css/jsna-uci.css">
+                <link rel="stylesheet" href="../css/adminlte.min.css">
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Registro Usuario</title>
             </head>
-            <body>
-                <div>
-                    <p>Usuario no registrado</p>
+            <body class="bodyJSNA-UCI">
+                <div class="divMESSAGE">
+                    <p class="message">Usuario no registrado</p>
                 </div>
             </body>
         </html>

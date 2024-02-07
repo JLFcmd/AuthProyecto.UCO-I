@@ -12,10 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirección en PHP</title>
 </head>
-<body>
-    <div>
-        <p>Usuario o contraseña incorrectos</p>
-        <p>Intentalo de nuevo</p>
+<body class="bodyJSNA-UCI">
+    <div class="divMESSAGE">
+        <p class="message">Usuario o contraseña incorrectos</p>
+        <p class="message">Intentalo de nuevo</p>
     </div>
 </body>
 </html>

@@ -5,18 +5,16 @@
   <?php
   include 'header.php';
   ?>
-
+  <link rel="stylesheet" href="../core/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body>
 
   <!--Footer Entero-->
-  <footer>
-    <div style="border-top: solid #8a8d91 1px;" class="footer">
-      <p>&copy;
+  <footer id="footerUCO" class="footerUCO">
+      <p id="footerUCO"class="none">&copy;
         <?php echo date('Y'); ?> UCO IDIOMAS. Todos los derechos reservados.
       </p>
-    </div>
   </footer>
 
   <!-- jQuery -->
