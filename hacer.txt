@@ -27,3 +27,7 @@ en la base de datos hemos añadido dos campos, email, y admin (tinyint) que es p
 
 
 
+nuevas cosas que hacer:
+
+modificar active para que funcione boton activo
+

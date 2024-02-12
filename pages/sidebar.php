@@ -17,7 +17,7 @@
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button" onclick="expandirDashboard()"><i class="fas fa-bars"></i></a>
       </li>
     </ul>
 
@@ -73,9 +73,9 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link caja-btn" data-caja="caja1">
+            <a href="principal.php?caja=dashboard" id="dashboardLink" class="nav-link caja-btn" data-caja="dashboard">
               <i class="nav-icon fas fa-bolt"></i>
-              <p>Caja 1</p>
+              <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item">

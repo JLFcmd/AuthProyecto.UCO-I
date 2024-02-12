@@ -11,10 +11,21 @@
 <body class="hold-transition sidebar-mini">
   <!-- Menú Central Entero -->
   <div style="text-align: center; margin-top: 20px;">
-    <a href="#" class="menu-button">Botón 1</a>
-    <a href="#" class="menu-button">Botón 2</a>
-    <a href="#" class="menu-button">Botón 3</a>
     <!-- Agrega más botones según sea necesario -->
+    <?php
+    if (isset($_GET['caja'])){
+      $selectCaja = $_GET['caja'];
+      switch($selectCaja){
+        case 'dashboard':
+          include './centralpages/dashboard.php';
+          break;
+        case '':
+
+        default:
+          include './centralpages/dashboard.php';
+      }
+    }
+    ?>
   </div>
 
   <!-- jQuery -->
