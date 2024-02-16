@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOGIN</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Inicio de Sesión</title>
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="css/login-register.css">
-
-
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../core/css/adminlte.min.css">
+  
 </head>
-
-<body>
-  <div class="container">
-    <div class="login-container">
-      <div class="text-center">
-        <img src="../img/logogrande.png" alt="logograndeUCOIDIOMAS" class="logo">
-      </div>
-      <form action="./core/login.php" method="post">
-        <div class="form-group">
-          <label for="username">Nombre de Usuario:</label>
-          <input type="text" class="form-control" name="username" id="username"
-            placeholder="Ingrese un nombre de usuario" required>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <p class="h1"><b>UCO</b>......</p>
+    </div>
+    <div class="card-body">
+      <form action="../core/php/login.php" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="username" id="username" placeholder="Usuario" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">Contraseña:</label>
-          <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese una contraseña"
-            required>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
-        <br>
-        <br>
-        <a class="btn-green" href="index2.php">¿No tienes una cuenta?, ¡registrarse!</a>
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-block btn-primary">Iniciar Sesión</button>
+          </div>
+          <!-- /.col -->
+        </div>
       </form>
     </div>
+    <!-- /.card-body -->
   </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
 
-  <!-- Script de tiempo de logout -->
-  <script src="./core/timeout.js"></script>
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../core/js/adminlte.min.js"></script>
+<!-- Script de tiempo de logout -->
+<script src="../core/js/timeout.js"></script>
 </body>
 </html>
