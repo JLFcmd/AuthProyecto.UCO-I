@@ -77,5 +77,7 @@
   <script src="../core/js/adminlte.min.js"></script>
   <!-- Script de los actives (Botones sidebar) -->
   <script src="../core/js/active.js"></script>
+  <!-- Script para manejar la redirección de los enlaces del sidebar -->
+  <script src="../core/js/sidebarRedirection.js"></script>
 </body>
 </html>
